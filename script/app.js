@@ -6,6 +6,7 @@ const data = {
     {
       label: "My First dataset",
       backgroundColor: "rgba(255, 99, 132,0.4)",
+
       borderColor: "rgba(100, 99, 132,0.2)",
       data: [35, 10, 5, 2, 20, 30, 45],
     },
