@@ -3,3 +3,8 @@
   height: 50%;
   margin: 0 auto;
 }
+h1,
+h2 {
+  color: #fd94a9;
+  text-align: center;
+}

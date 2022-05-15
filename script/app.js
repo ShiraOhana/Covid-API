@@ -19,3 +19,18 @@ const config = {
   options: {},
 };
 const myChart = new Chart(document.getElementById("myChart"), config);
+
+let response;
+
+function displayAsiaCountry(response) {
+  // console.log(response);
+  let GetAsiaCountries;
+  for (let i = 0; i < response.data.length; i++) {
+    GetAsiaCountries = response.data[i].name.common;
+    console.log(GetAsiaCountries);
+  }
+}
+
+let urlApi = "https://restcountries.herokuapp.com/api/v1/region/Asia";
+axios.get(urlApi).then(displayAsiaCountry);
+alert("Please check the title's message");
